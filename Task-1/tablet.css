@@ -1,0 +1,19 @@
+.navbar ul{
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.heading{
+    font-size: 2.5rem;
+}
+#pic{
+    flex-direction: column;
+    align-items: center;
+}
+#pic img{
+    width: 490px;
+    height: 350px;
+}
+#intro h2{
+    text-align: center;
+    padding: 10px;
+}

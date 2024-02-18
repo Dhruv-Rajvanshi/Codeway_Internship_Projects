@@ -1,0 +1,19 @@
+#home{
+    height: 820px;
+}
+.headings{
+    font-size: 1.7rem;
+}
+#pic img{
+    width: 250px;
+    height: 200px;
+}
+#intro h2{
+    font-size: 1.5rem;
+}
+.gallery img{
+    width: 275px;
+    height: 150px;
+    margin: 10px;
+}
+

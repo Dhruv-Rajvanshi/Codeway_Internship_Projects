@@ -1,0 +1,370 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: none;
+}
+html{
+    scroll-behavior: smooth;
+}
+.navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: sticky;
+    top: 0;
+}
+.navbar ul{
+    display: flex;
+    list-style: none;
+    margin: 20px 0px;
+}
+.navbar ul li{
+    font-family: century;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: white;
+    padding: 8px 25px;
+    transition: all .5s ease;
+}
+.navbar ul li a:hover{
+    background-color: white;
+    color: black;
+    box-shadow: 0 0 10px white;
+}
+#home{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 840px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+#home::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: url(bg1.jpg) no-repeat center center/cover;
+    height: 900px;
+    width: 100%;
+    z-index: -1;
+    opacity: .8;
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid white; */
+    align-items: center;
+    position: absolute;
+    top: 30%;
+    left: 10%;
+}
+.headings{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 3rem;
+    text-align: center;
+    margin: 40px 0;
+    letter-spacing: 4px;
+}
+.btn{
+    font-size: 16px;
+    padding: 10px 35px;
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    outline: none;
+    transition: .7 ease;
+}
+.btn:hover{
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    box-shadow: 0 0 5px white, 0 0 8px white, 0 0 10px white;
+    font-weight: bold;
+}
+#about{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 20px;
+    margin-bottom: 50px;
+}
+#pic{
+    display: flex;
+}
+#pic img{
+    width: 100%;
+    height: 600px;
+    padding-right: 10px;
+}
+#intro{
+    display: flex;
+    letter-spacing: 1px;
+    flex-direction: column;
+    text-align: justify;
+    padding: 10px;
+}
+#intro h2{
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+#intro p{
+    line-height: 28px;
+    font-size: 21px;
+}
+.aboutmebtn{
+    margin-top: 32px;
+}
+.aboutmebtn input{
+    padding: 19px 20px;
+    font-size: larger;
+    background-color: rgb(70, 67, 67);
+    color: #fff;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; 
+}
+.aboutmebtn input:hover{
+    background-color: rgba(0, 0, 0, 0.7);
+    box-shadow:  0 0 5px rgb(0, 0, 0, 0.7);;
+}
+#projects{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    align-items: center;
+    padding: 20px;
+    margin-bottom: 50px;
+}
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    box-sizing: border-box;
+}
+.gallery img{
+    width: 400px;
+    height: 300px;
+    margin: 10px;
+}
+#skills{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+
+}
+.row{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+}
+.box{
+    display: flex;
+    flex-direction: column;
+    width: 330px;
+    height: 580px;
+    border: 1px solid black;
+    margin: 10px;
+    align-items: center;
+    text-align: justify;
+    padding: 10px;
+    border-radius: 15px;
+    background: linear-gradient(to top, rgb(0, 0, 0, 0.7) 50%, white 50%);
+    background-size: 100% 200%;
+    transition: all .8s;
+}
+.box p{
+    line-height: 25px;
+    font-family: century;   
+}
+.box:hover{
+    color: white ;
+    background-position: left bottom;
+    border: none;
+    box-shadow: 0 0 20px rgb(0, 0, 0, 0.7);
+}
+.box img{
+    padding-top: 40px;
+    width: 120px;
+    height: 140px;
+}
+
+#contact {
+    position: relative;
+    min-height: 90vh;
+    padding: 50px 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding-bottom: 150px
+
+}
+#contact .content {
+    max-width: 800px;
+    text-align: center;
+}
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.container .contactInfo {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.container .contactInfo .contactbox {
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+}
+
+.container .contactInfo .contactbox .icon {
+    min-width: 80px;
+    height: 80px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 22px;
+    margin-right: 20px;
+}
+
+.text {
+    display: flex;
+    font-size: 18px;
+    color: #fff;
+    flex-direction: column;
+    font-weight: 300;
+}
+
+.text h3 {
+    font-size: 30px;
+    font-weight: 400;
+    color: #00bcd4;
+}
+
+.contactform {
+    width: 60%;
+    padding: 30px; 
+    background: #fff;
+    margin-top: 20px;
+    border-radius: 10px
+}
+
+.contactform h2 {
+    font-size: 26px;
+    color: #333;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.contactform .inputbox {
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.contactform .inputbox input,
+.contactform .inputbox textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+
+.contactform .inputbox textarea {
+    height: 70px;
+    resize: none;
+}
+
+.contactform .button input {
+    padding: 12px 20px;
+    background-color: #00bcd4;
+    color: #fff;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; 
+}
+
+.contactform .button input:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+
+#footer {
+    position: absolute;
+    bottom: 0;
+    margin-top: 120px;
+    width: 100%;
+    padding: 2px;
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: space-between; 
+}
+
+.footer-icons {
+    display: flex;
+    gap: 10px;
+    margin-right: 20px;
+}
+
+.footer-icon {
+    font-size: 24px;
+    margin-left: 10px;
+    color: white;
+    text-decoration: none;
+}
+
+.footer-icon:hover {
+    color: #00bcd4;
+}
+
+
+@media (max-width: 991px)
+{
+    .contact
+    {
+        padding: 50px;
+    }
+    .container
+    {
+        flex-direction: column;
+    }
+    .container .contactInfo
+    {
+        margin-bottom: 40px;
+    }
+    .container .contactInfo,
+    .contactform
+    {
+        width: 100%;
+    }
+}
