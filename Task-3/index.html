@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Starbucks Coffee</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+        <div class="circle"></div>
+        <header>
+            <a href="#"><img src="photos/logo.png" class="logo" alt=""></a>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">What's New</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </header>
+        <div class="content">
+            <div class="textBox">
+                <h2>Its's not just Coffee<br>It's <span>Starbucks</span></h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam eligendi iure dignissimos voluptatibus eveniet, consectetur omnis, ab sapiente, quam sunt quo illum autem quibusdam minus ducimus fuga a fugiat. Deserunt!</p>
+                <a href="#">Learn More</a>
+            </div>
+        </div>
+        <div class="imgBox">
+            <img src="photos/img1.png" class="starbucks">
+        </div>
+        <ul class="thumb">
+            <li><img src="photos/thumb1.png" onclick="imgSlider('photos/img1.png'); changeCircleColor('#017143')"></li>
+            <li><img src="photos/thumb2.png" onclick="imgSlider('photos/img2.png'); changeCircleColor('#eb7495')"></li>
+            <li><img src="photos/thumb3.png" onclick="imgSlider('photos/img3.png'); changeCircleColor('#d752b1')"></li>
+        </ul>
+        <ul class="sci">
+            <li><a href="https://www.facebook.com/Starbucks/"><img src="photos/facebook.png"></a></li>
+            <li><a href="https://twitter.com/Starbucks"><img src="photos/twitter.png"></a></li>
+            <li><a href="https://www.instagram.com/starbucks/"><img src="photos/instagram.png"></a></li>
+        </ul>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
