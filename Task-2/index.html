@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Calculater</title>
+</head>
+<body>
+  <main id="main">
+    <form id="calc_form">
+      <header class="calc_header">
+        <input type="text" disabled id="output" class="calc_output" value="0">
+      </header>
+      <footer class="calc_footer">
+          <div class="btn_group">
+              <button data-type="clear" type="reset" value="clear" class="btn btn-grey">
+                AC
+              </button>
+              <button data-type="operator" value="invert" class="btn btn-grey">
+                +/-
+              </button>
+            <button data-type="operator" value="%" class="btn btn-grey">
+                %
+            </button>
+            <button data-type="operator" value="/" class="btn btn-orange" id="op">
+                +
+            </button>
+          </div>
+          
+          <div class="btn_group">
+            <button data-type="operator" value="7" class="btn btn-dark-grey" id="7">
+              7
+            </button>
+            <button data-type="operator" value="8" class="btn btn-dark-grey">
+              8
+            </button>
+            <button data-type="operator" value="9" class="btn btn-dark-grey">
+              9
+            </button>
+            <button data-type="operator" value="*" class="btn btn-orange">
+              *
+            </button>
+          </div>
+
+          <div class="btn_group">
+            <button data-type="operator" value="4" class="btn btn-dark-grey">
+              4
+            </button>
+            <button data-type="operator" value="5" class="btn btn-dark-grey">
+              5
+            </button>
+            <button data-type="operator" value="6" class="btn btn-dark-grey">
+              6
+            </button>
+            <button data-type="operator" value="-" class="btn btn-orange" id="op">
+              -
+            </button>
+          </div>
+
+          <div class="btn_group">
+            <button data-type="operator" value="1" class="btn btn-dark-grey">
+              1
+            </button>
+            <button data-type="operator" value="2" class="btn btn-dark-grey">
+              2
+            </button>
+            <button data-type="operator" value="3" class="btn btn-dark-grey">
+              3
+            </button>
+            <button data-type="operator" value="+" class="btn btn-orange" id="op">
+              +
+            </button>
+          </div>
+
+          <div class="btn_group">
+            <button data-type="operand" value="0" class="btn btn-grow btn-dark-grey">
+              0
+            </button>
+            <button data-type="operand" value="." class="btn btn-dark-grey">
+              .
+            </button>
+            <button data-type="operator" value="=" class="btn btn-orange">
+              =
+            </button>
+          </div>
+      </footer>
+    </form>
+  </main>
+          <script src="script.js"></script>
+</body>
+</html>
